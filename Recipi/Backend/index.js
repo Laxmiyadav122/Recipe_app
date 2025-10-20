@@ -22,6 +22,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const PORT = process.env.PORT || 5000;
+
+// Health check endpoint
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Backend is running ✅" });
+});
+
+
 app.use('/auth', AuthRouter);
 
 app.listen(8080, () =>{
