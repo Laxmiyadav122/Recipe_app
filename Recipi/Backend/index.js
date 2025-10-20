@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 8080;
 
 // Health check endpoint
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Backend is running ✅" });
+  res.status(200).json({ message: "Backend is running Laxmi ✅" });
 });
 
 
