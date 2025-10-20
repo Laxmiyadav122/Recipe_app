@@ -1,0 +1,245 @@
+label{
+  font-size: 20px;
+}
+ html,
+ body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ }
+
+ body{
+  font-family: sans-serif;
+ }
+
+ .container{
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  margin-left: 650px;
+  margin-top: 30px;
+ }
+
+ .container > h1{
+  margin-bottom: 20px;
+ }
+
+ .container > form{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+ }
+
+ .container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+ }
+
+ button{
+  background-color: purple;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+ }
+
+ .searchBar{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 22px;
+  position: static;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+ }
+
+ .searchBar input{
+  width: 400px;
+  padding: 9px;
+  font-size: 22px;
+  border: none;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+ }
+
+ .searchBar button{
+  width: 90px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+ }
+
+ .meals{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 44px;
+ }
+
+ .meals img{
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+ }
+ .mealImg{
+  width: 280;
+  height: 380px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  border-radius: 11px;
+ }
+ .mealImg p{
+  font-weight: 600;
+ }
+
+ .mealImg button{
+  width: 120px;
+  background-color: orange;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px;
+  cursor: pointer;
+ }
+
+ .mealInfo img{
+  width: 400px;
+  height: 400px;
+  border-radius: 11px;
+ }
+
+ .mealInfo{
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 181, 42);
+  padding: 32px;
+ }
+
+ .mealInfo button{
+  border: none;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 19px;
+  background-color: orangered;
+  color: #fff;
+ }
+
+ .mealInfo .info{
+  margin-top: -112px;
+ }
+
+ .msg{
+  text-align: center;
+ }
+
+ .head{
+  text-align: center;
+ }
+
+ #logoutbtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: purple;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+ }
+ h3{
+  padding-left: 730px;
+  padding-top: 10px;
+ }
+
+ .info p{
+  text-align: center;
+ }
+
+ @media(max-width: 768px){
+  .mealInfo{
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .mealInfo h1{
+    font-size: 1.5rem;
+   }
+   .mealInfo p{
+    font-size: 0.95rem;
+   }
+ }
+
+ @media(max-width: 480px){
+  .mealCard img{
+    height: 150px;
+  }
+
+  .mealInfo h1{
+    font-size: 1.2rem;
+  }
+ }
+
+ .mealInfo button{
+  font-size: 0.9rem;
+  padding: 8px 12px;
+ }
+
+
+ @media(max-width: 480px){
+  input,
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+ }
+
+ @media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
