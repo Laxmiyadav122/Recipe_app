@@ -9,7 +9,7 @@ function Login() {
   password: ''
  })
 
- // laxmi
+ // laxmi yadav
  
   const navigate = useNavigate();
   const handleChange =(e) =>{
@@ -20,7 +20,7 @@ function Login() {
      setLoginInfo(copyLoginInfo);
   }
   const handleLogin = async(e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     const {email,password} = LoginInfo;
     if(!email || !password){
       return handleError('email and password are required')
