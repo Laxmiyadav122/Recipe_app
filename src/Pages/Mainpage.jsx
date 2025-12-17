@@ -15,6 +15,7 @@ useEffect(() =>{
   setLoggedInUser(localStorage.getItem('loggedInUser'));
 },[]);
 
+
 const handleLogout = () =>{
   localStorage.removeItem('token');
   localStorage.removeItem('loggedInUser');

@@ -26,7 +26,7 @@ function Login() {
       return handleError('email and password are required')
     }
     try{
-      const url = "https://recipe-app-delta-hazel.vercel.app/auth/login";
+      const url = "https://recipi-backend.vercel.app/auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {
